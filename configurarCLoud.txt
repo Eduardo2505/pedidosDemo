@@ -1,0 +1,26 @@
+sudo chmod -R 777 /var/www/html/pedidos
+sudo chmod -R 0755 /var/www/html/pedidos
+
+rm -r /var/www/html/pedidos
+
+sudo nano /var/www/html/pedidos/application/config/database.php
+
+sudo git clone https://github.com/Eduardo2505/pedidos.git
+
+sudo a2enmod rewrite
+
+sudo nano /etc/apache2/apache2.conf
+
+sudo service apache2 restart
+
+Intal ftp
+sudo apt-get install vsftpd
+
+sudo nano /etc/vsftpd.conf
+sudo service vsftpd restart
+
+useradd -d /var/www/html/pedidos pedidos
+passwd pedidos 
+
+
+http://35.184.43.208
